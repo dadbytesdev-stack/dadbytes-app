@@ -15,7 +15,7 @@ export default function AppsPage() {
 
       <main className="flex-1">
 
-        {/* ── Page Header ──────────────────────────────────── */}
+        {/* Page Header */}
         <section className="bg-db-surface border-b border-db-border">
           <div className="max-w-5xl mx-auto px-6 py-16">
             <h1 className="text-4xl font-semibold text-db-text mb-3">Our Apps</h1>
@@ -25,7 +25,7 @@ export default function AppsPage() {
           </div>
         </section>
 
-        {/* ── MindMantra ───────────────────────────────────── */}
+        {/* MindMantra */}
         <section className="max-w-5xl mx-auto px-6 py-16 border-b border-db-border">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -43,16 +43,16 @@ export default function AppsPage() {
               </p>
               <ul className="space-y-2 text-sm text-db-muted mb-8">
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Daily affirmation notifications
+                  <span className="text-primary">&#10003;</span> Daily affirmation notifications
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Tailored for men&apos;s mindset
+                  <span className="text-primary">&#10003;</span> Tailored for men&apos;s mindset
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Simple, distraction-free interface
+                  <span className="text-primary">&#10003;</span> Simple, distraction-free interface
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> 100% free
+                  <span className="text-primary">&#10003;</span> 100% free
                 </li>
               </ul>
               <StoreButtons
@@ -72,7 +72,7 @@ export default function AppsPage() {
           </div>
         </section>
 
-        {/* ── Recipe Extractor ─────────────────────────────── */}
+        {/* Recipe Extractor */}
         <section className="max-w-5xl mx-auto px-6 py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 bg-db-surface rounded-2xl border border-db-border p-10 flex items-center justify-center min-h-64">
@@ -98,16 +98,16 @@ export default function AppsPage() {
               </p>
               <ul className="space-y-2 text-sm text-db-muted mb-8">
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Extract from any recipe website
+                  <span className="text-primary">&#10003;</span> Extract from any recipe website
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Clean, ad-free results
+                  <span className="text-primary">&#10003;</span> Clean, ad-free results
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> Copy ingredients & steps instantly
+                  <span className="text-primary">&#10003;</span> Copy ingredients &amp; steps instantly
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">✓</span> 100% free
+                  <span className="text-primary">&#10003;</span> 100% free
                 </li>
               </ul>
               <StoreButtons
