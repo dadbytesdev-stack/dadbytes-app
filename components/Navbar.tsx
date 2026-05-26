@@ -20,12 +20,12 @@ export default function Navbar() {
           >
             Apps
           </Link>
-          <Link
-            href="/apps"
+          <a
+            href="/#early-access"
             className="text-sm font-medium bg-primary text-white px-4 py-2 rounded-full hover:opacity-90 transition-opacity"
           >
-            Get the Apps
-          </Link>
+            Get Early Access
+          </a>
         </nav>
       </div>
     </header>
