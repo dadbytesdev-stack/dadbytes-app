@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoreButtons from "@/components/StoreButtons";
 
-const DONATE_LINK = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK ?? "#";
+const DONATE_LINK = "https://ko-fi.com/supportdadbytes";
 
 export default function Home() {
   return (
