@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StoreButtons from "@/components/StoreButtons";
@@ -15,6 +16,14 @@ export default function Home() {
         {/* Hero */}
         <section className="bg-db-surface border-b border-db-border">
           <div className="max-w-5xl mx-auto px-6 py-24 text-center">
+            <Image
+              src="/logo.png"
+              alt="Dad Bytes"
+              width={300}
+              height={139}
+              className="h-28 w-auto mx-auto mb-8"
+              priority
+            />
             <span className="inline-block text-xs font-semibold tracking-widest text-primary uppercase mb-4">
               Built by a dad, for everyone
             </span>

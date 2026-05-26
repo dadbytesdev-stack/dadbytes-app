@@ -1,11 +1,19 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-db-border">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold text-db-text tracking-tight hover:text-primary transition-colors">
-          Dad Bytes
+        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Image
+            src="/logo.png"
+            alt="Dad Bytes"
+            width={120}
+            height={56}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
         <nav className="flex items-center gap-8">
           <Link
@@ -31,4 +39,3 @@ export default function Navbar() {
     </header>
   );
 }
-
