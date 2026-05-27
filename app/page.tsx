@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* MindMantra */}
-            <div className="border border-db-border rounded-2xl p-8 bg-white hover:shadow-md transition-shadow">
+            <div className="border border-db-border rounded-2xl p-8 bg-db-card hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-5">
                 <span className="text-2xl font-bold text-primary">MM</span>
               </div>
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
 
             {/* Recipe Extractor */}
-            <div className="border border-db-border rounded-2xl p-8 bg-white hover:shadow-md transition-shadow">
+            <div className="border border-db-border rounded-2xl p-8 bg-db-card hover:shadow-md transition-shadow">
               <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-5">
                 <span className="text-2xl font-bold text-primary">RE</span>
               </div>

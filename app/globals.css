@@ -1,17 +1,44 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light mode tokens */
+:root {
+  --db-primary:       #1D9E75;
+  --db-primary-light: #E1F5EE;
+  --db-text:          #0F0F0F;
+  --db-muted:         #666666;
+  --db-border:        #EEEEEE;
+  --db-surface:       #F2F7F5;
+  --db-bg:            #ffffff;
+  --db-card:          #ffffff;
+}
+
+/* Dark mode tokens */
+html.dark {
+  --db-primary-light: #0D3D2E;
+  --db-text:          #F0F0F0;
+  --db-muted:         #9CA3AF;
+  --db-border:        #2D3748;
+  --db-surface:       #1E2535;
+  --db-bg:            #0F1117;
+  --db-card:          #1a2030;
+}
+
 @theme inline {
   --font-sans: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --color-primary:        #1D9E75;
-  --color-primary-light:  #E1F5EE;
-  --color-db-text:        #0F0F0F;
-  --color-db-muted:       #666666;
-  --color-db-border:      #EEEEEE;
-  --color-db-surface:     #F2F7F5;
+  --color-primary:        var(--db-primary);
+  --color-primary-light:  var(--db-primary-light);
+  --color-db-text:        var(--db-text);
+  --color-db-muted:       var(--db-muted);
+  --color-db-border:      var(--db-border);
+  --color-db-surface:     var(--db-surface);
+  --color-db-bg:          var(--db-bg);
+  --color-db-card:        var(--db-card);
 }
 
 body {
-  background-color: #ffffff;
-  color: #0F0F0F;
+  background-color: var(--db-bg);
+  color: var(--db-text);
 }

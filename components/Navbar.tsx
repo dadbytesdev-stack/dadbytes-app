@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-db-border">
+    <header className="sticky top-0 z-50 bg-db-bg border-b border-db-border">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
           <Image
@@ -15,7 +16,7 @@ export default function Navbar() {
             priority
           />
         </Link>
-        <nav className="flex items-center gap-8">
+        <nav className="flex items-center gap-6">
           <Link
             href="/"
             className="text-sm font-medium text-db-muted hover:text-db-text transition-colors"
@@ -34,6 +35,7 @@ export default function Navbar() {
           >
             Get Early Access
           </a>
+          <DarkModeToggle />
         </nav>
       </div>
     </header>
