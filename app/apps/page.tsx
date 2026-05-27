@@ -32,7 +32,7 @@ export default function AppsPage() {
           <div className="max-w-5xl mx-auto px-6 py-16">
             <h1 className="text-4xl font-semibold text-db-text mb-3">Our Apps</h1>
             <p className="text-db-muted text-lg max-w-xl">
-              Two apps. Both free. Both available on Google Play and the App Store.
+              Two apps. Both free to download. Both available on Google Play and the App Store.
             </p>
           </div>
         </section>
