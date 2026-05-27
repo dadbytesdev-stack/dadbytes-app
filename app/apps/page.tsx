@@ -58,20 +58,6 @@ export default function AppsPage() {
                 short enough to read in seconds, meaningful enough to carry
                 through the day.
               </p>
-              <ul className="space-y-2 text-sm text-db-muted mb-8">
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Daily affirmation notifications
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Tailored for men&apos;s mindset
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Focus categories &amp; favourites
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> 100% free
-                </li>
-              </ul>
               <StoreButtons
                 googlePlayUrl="https://play.google.com/store/apps/details?id=app.vercel.mma_pied_seven.twa"
                 appStoreUrl="https://apps.apple.com/us/app/mindmantra-daily-affirmations/id6764234535"
@@ -119,20 +105,6 @@ export default function AppsPage() {
                 no ads, no pop-ups — just the ingredients and steps you need,
                 clean and ready to use.
               </p>
-              <ul className="space-y-2 text-sm text-db-muted mb-8">
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Extract from any recipe website
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Clean, ad-free results
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Copy ingredients &amp; steps instantly
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> 100% free
-                </li>
-              </ul>
               <StoreButtons
                 googlePlayUrl="https://play.google.com/store/apps/details?id=app.vercel.re_flax.twa"
                 appStoreUrl="https://apps.apple.com/us/app/the-recipe-extractor/id6768546046"
