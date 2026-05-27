@@ -59,9 +59,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* MindMantra */}
             <div className="border border-db-border rounded-2xl p-8 bg-db-card hover:shadow-md transition-shadow">
-              <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-5">
-                <span className="text-2xl font-bold text-primary">MM</span>
-              </div>
+              <img
+                src="https://play-lh.googleusercontent.com/7xpN1sq5hECkV4PCijMAdPsE_2PCEAIl-cTgMAGKaYlwkmOuxoS3k_2KtBG7t6akytL5-magCrbVEtOZcRaYs0M=w112-h112-rw"
+                alt="MindMantra"
+                className="w-14 h-14 rounded-2xl mb-5"
+              />
               <h3 className="text-xl font-semibold text-db-text mb-2">
                 MindMantra &middot; Daily Affirmations
               </h3>
@@ -77,9 +79,11 @@ export default function Home() {
 
             {/* Recipe Extractor */}
             <div className="border border-db-border rounded-2xl p-8 bg-db-card hover:shadow-md transition-shadow">
-              <div className="w-14 h-14 bg-primary-light rounded-2xl flex items-center justify-center mb-5">
-                <span className="text-2xl font-bold text-primary">RE</span>
-              </div>
+              <img
+                src="https://play-lh.googleusercontent.com/j7YWwwqi4FHy0rRPAE6xPCZ2gEEW6GEdTwEpz65K9C7Jy9K8fv8Iyq8LKaMaUD7W7Qk7dhORQ-sfBvBtzgssRQ=w112-h112-rw"
+                alt="The Recipe Extractor"
+                className="w-14 h-14 rounded-2xl mb-5"
+              />
               <h3 className="text-xl font-semibold text-db-text mb-2">
                 The Recipe Extractor
               </h3>
