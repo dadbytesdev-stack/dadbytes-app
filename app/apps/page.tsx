@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   description: "Explore MindMantra and The Recipe Extractor — free apps available on Google Play and the App Store.",
 };
 
+const MM_ICON = "https://play-lh.googleusercontent.com/7xpN1sq5hECkV4PCijMAdPsE_2PCEAIl-cTgMAGKaYlwkmOuxoS3k_2KtBG7t6akytL5-magCrbVEtOZcRaYs0M=w160-h160-rw";
+const MM_SCREENS = [
+  "https://play-lh.googleusercontent.com/BhgaA7HjtBVB4pHVx3pKmmtQma3SJGRLVIu04gTGdzguyiomt6vhiNlLa2oFxQnn4lMnRSeEN0dnXVsJqHyJMA=w300-h650-rw",
+  "https://play-lh.googleusercontent.com/PtNqSLkWT_iz5xX1c2Jmz3RVY4mve39_KX2hEiFsN8TgGJeUXRr98FMUJlCb-JamucmkESTFH_yYdqDSkaJ-sQ=w300-h650-rw",
+];
+
+const RE_ICON = "https://play-lh.googleusercontent.com/j7YWwwqi4FHy0rRPAE6xPCZ2gEEW6GEdTwEpz65K9C7Jy9K8fv8Iyq8LKaMaUD7W7Qk7dhORQ-sfBvBtzgssRQ=w160-h160-rw";
+const RE_SCREENS = [
+  "https://play-lh.googleusercontent.com/2JCtGcWmwKJknaToIDShf2PLi-Mqo6Q-C3JkD1Ns09qIUtS72dy-SYcJgzmWK85u9_EpJ1IoEEmGr4Yq4Fr3fRc=w300-h650-rw",
+  "https://play-lh.googleusercontent.com/4EoqFGMAqMJM84viMNkoub54s0OKp12om7nqkRvTONTvPzmUm43BMQ8HzVPFApvXX21AUxWq700Kn6_M12r-=w300-h650-rw",
+];
+
 export default function AppsPage() {
   return (
     <>
@@ -27,15 +39,20 @@ export default function AppsPage() {
 
         {/* MindMantra */}
         <section className="max-w-5xl mx-auto px-6 py-16 border-b border-db-border">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+
+            {/* Info */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-primary-light text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
-                Daily Affirmations
+              <div className="flex items-center gap-4 mb-5">
+                <img src={MM_ICON} alt="MindMantra icon" className="w-16 h-16 rounded-2xl shadow-sm" />
+                <div>
+                  <div className="inline-flex items-center bg-primary-light text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-1">
+                    Daily Affirmations
+                  </div>
+                  <h2 className="text-2xl font-semibold text-db-text">MindMantra</h2>
+                </div>
               </div>
-              <h2 className="text-3xl font-semibold text-db-text mb-4">
-                MindMantra
-              </h2>
-              <p className="text-db-muted mb-4">
+              <p className="text-db-muted mb-5">
                 Build a daily mindset habit with affirmations tailored to men.
                 MindMantra delivers a fresh, focused affirmation every day —
                 short enough to read in seconds, meaningful enough to carry
@@ -49,7 +66,7 @@ export default function AppsPage() {
                   <span className="text-primary">&#10003;</span> Tailored for men&apos;s mindset
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-primary">&#10003;</span> Simple, distraction-free interface
+                  <span className="text-primary">&#10003;</span> Focus categories &amp; favourites
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-primary">&#10003;</span> 100% free
@@ -60,38 +77,44 @@ export default function AppsPage() {
                 appStoreUrl="https://apps.apple.com/us/app/mindmantra-daily-affirmations/id6764234535"
               />
             </div>
-            <div className="bg-db-surface rounded-2xl border border-db-border p-10 flex items-center justify-center min-h-64">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl font-bold text-white">MM</span>
+
+            {/* Screenshots */}
+            <div className="flex gap-4 justify-center">
+              {MM_SCREENS.map((src, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden shadow-md border border-db-border flex-1 max-w-[160px]">
+                  <img src={src} alt={`MindMantra screenshot ${i + 1}`} className="w-full h-auto" />
                 </div>
-                <p className="text-sm text-db-muted">MindMantra</p>
-                <p className="text-xs text-db-muted">Daily Affirmations</p>
-              </div>
+              ))}
             </div>
+
           </div>
         </section>
 
         {/* Recipe Extractor */}
         <section className="max-w-5xl mx-auto px-6 py-16">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 bg-db-surface rounded-2xl border border-db-border p-10 flex items-center justify-center min-h-64">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-3xl font-bold text-white">RE</span>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+
+            {/* Screenshots */}
+            <div className="flex gap-4 justify-center order-2 md:order-1">
+              {RE_SCREENS.map((src, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden shadow-md border border-db-border flex-1 max-w-[160px]">
+                  <img src={src} alt={`Recipe Extractor screenshot ${i + 1}`} className="w-full h-auto" />
                 </div>
-                <p className="text-sm text-db-muted">The Recipe Extractor</p>
-                <p className="text-xs text-db-muted">Clean recipes, instantly</p>
-              </div>
+              ))}
             </div>
+
+            {/* Info */}
             <div className="order-1 md:order-2">
-              <div className="inline-flex items-center gap-2 bg-primary-light text-primary text-xs font-semibold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
-                Recipe Tool
+              <div className="flex items-center gap-4 mb-5">
+                <img src={RE_ICON} alt="Recipe Extractor icon" className="w-16 h-16 rounded-2xl shadow-sm" />
+                <div>
+                  <div className="inline-flex items-center bg-primary-light text-primary text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-1">
+                    Recipe Tool
+                  </div>
+                  <h2 className="text-2xl font-semibold text-db-text">The Recipe Extractor</h2>
+                </div>
               </div>
-              <h2 className="text-3xl font-semibold text-db-text mb-4">
-                The Recipe Extractor
-              </h2>
-              <p className="text-db-muted mb-4">
+              <p className="text-db-muted mb-5">
                 Paste any recipe URL and get just the recipe. No life stories,
                 no ads, no pop-ups — just the ingredients and steps you need,
                 clean and ready to use.
@@ -115,6 +138,7 @@ export default function AppsPage() {
                 appStoreUrl="https://apps.apple.com/us/app/the-recipe-extractor/id6768546046"
               />
             </div>
+
           </div>
         </section>
 
